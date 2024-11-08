@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Github Proxy Click",
+    "version": "1.0",
+    "description": "Help downloading files from github moeyy",
+    "icons": {
+        "48": "icon.ico"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "menus","contextMenus"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://github.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
