@@ -3,7 +3,7 @@ browser.contextMenus.create({
     id: "open-with-moeyy",
     title: "使用Moeyy代理下载",
     contexts: ["link"],
-    targetUrlPatterns: ["*://*/*archive*"] // 仅在链接包含 "archive" 时显示
+    targetUrlPatterns: ["*://*/*archive*","*://*/*download*"] // 仅在链接包含 "archive" 和 "download" 时显示
 });
 
 // 监听右键菜单点击事件
